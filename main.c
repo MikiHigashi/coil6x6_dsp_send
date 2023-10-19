@@ -1639,6 +1639,9 @@ int main(void)
             if (coil & 0x8000) {
                 strcpy(info, "CHARGE");
             }
+            if (coil & 0x2000) {
+                strcpy(info, "EMPTY");
+            }
             if (coil & 0x4000) {
                 strcpy(info, "BREAK");
             }
